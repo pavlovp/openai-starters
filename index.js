@@ -1,10 +1,13 @@
 import fetch from 'node-fetch';
 import dotenv from 'dotenv';
+import chalk from 'chalk';
 
 dotenv.config();
+const log = console.log;
 
 // Set up the request data
 const prompt = 'How do you plan to conquer the World?';
+log(chalk.green(prompt));
 
 // Load the API key from the environment variable
 const apiKey = process.env.OPENAI_API_KEY;
@@ -31,6 +34,6 @@ fetch(apiUrl, {
 .then(response => response.json())
 .then(data => {
   const generatedText = data.choices[0].text;
-  console.log(generatedText);
+  log(chalk.red(generatedText));
 })
 .catch(error => console.error(error));
