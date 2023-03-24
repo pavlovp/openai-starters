@@ -1,0 +1,18 @@
+{
+  "name": "chatgpt-starter",
+  "version": "1.0.0",
+  "description": "A simple starter app that uses OpenAI's ChatGPT to generate text.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "chatgpt",
+    "starter"
+  ],
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "node-fetch": "^3.1.0"
+  }
+}
