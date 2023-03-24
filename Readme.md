@@ -9,12 +9,9 @@ Set your API key in the .env file.
 You can get it from: https://platform.openai.com/account/api-keys
 
 ```bash
-git clone https://github.com/<username>/chatgpt-starter.git
+git https://github.com/pavlovp/chatgpt-node-starter
 cd chatgpt-starter
-
-Then, install the dependencies:
 npm install
-
 npm start
 ``
 
